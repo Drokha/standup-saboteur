@@ -26,9 +26,11 @@ This app is meant for fun. If you get fired for saying “cornichon” in front 
 - 🔁 New word every day (soon: locked to daily via localStorage)
 - 📝 Log your sabotage attempt
 - 📤 Optional sharing (coming soon)
+```
 
 ## 📦 Setup
 
 ```bash
 npm install
 npm run dev
+```
