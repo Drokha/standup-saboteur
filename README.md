@@ -12,9 +12,11 @@ A tiny React + TypeScript app that gives you a new "word of the day" challenge e
 - TailwindCSS for styling
 - JSON word list for max sabotage elegance
 
-## 🚀 Try it (Soon)
+## 🚀 Try it 
 
-Live demo coming soon via Vercel!
+Live demo via Vercel!
+
+[a link](https://standup-saboteur.vercel.app)
 
 ## 🙃 Disclaimer
 
