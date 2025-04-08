@@ -20,9 +20,9 @@ Live demo coming soon via Vercel!
 
 This app is meant for fun. If you get fired for saying “cornichon” in front of the VP of Sales, that’s on you.
 
-```markdown
 ## ✨ Features
 
+```markdown
 - 🔁 New word every day (soon: locked to daily via localStorage)
 - 📝 Log your sabotage attempt
 - 📤 Optional sharing (coming soon)
