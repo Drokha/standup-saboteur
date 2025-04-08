@@ -31,3 +31,9 @@ export const storeWordForToday = (word: string) => {
   };
   localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
 };
+
+export const getRandomWord = (wordList: string[]): string => {
+  const index = Math.floor(Math.random() * wordList.length);
+  const word = wordList[index];
+  return word;
+};
