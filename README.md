@@ -16,7 +16,7 @@ A tiny React + TypeScript app that gives you a new "word of the day" challenge e
 
 Live demo via Vercel!
 
-[a link](https://standup-saboteur.vercel.app)
+[Live demo via Vercel!](https://standup-saboteur.vercel.app)
 
 ## 🙃 Disclaimer
 
