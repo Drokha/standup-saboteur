@@ -1,27 +1,40 @@
-import React, { useState } from "react";
-import words from "./data/frenchWords.json";
-import WordCard from "./components/WordCard.tsx";
-import ResultDisplay from "./components/ResultDisplay.tsx";
+import React, { useState, useEffect } from 'react';
+import words from './data/frenchWords.json';
+import WordCard from './components/WordCard';
+import ResultDisplay from './components/ResultDisplay';
+import { getStoredWord, storeWordForToday } from './utils/words';
+
 const getRandomWord = (wordList: string[]): string => {
   const index = Math.floor(Math.random() * wordList.length);
-  return wordList[index];
+  const word = wordList[index];
+  return word;
 };
 
 const App = () => {
-  const [word, setWord] = useState<string>(getRandomWord(words.mots_du_jour));
-  const [sentence, setSentence] = useState<string>("");
+  const [word, setWord] = useState<string>('');
+  const [sentence, setSentence] = useState<string>('');
   const [submitted, setSubmitted] = useState<boolean>(false);
 
+  useEffect(() => {
+    const stored = getStoredWord();
+    if (stored) {
+      setWord(stored);
+    } else {
+      const freshWord = getRandomWord(words.mots_du_jour);
+      setWord(freshWord);
+      storeWordForToday(freshWord);
+    }
+  }, []);
+
   const handleNewWord = () => {
-    setWord(getRandomWord(words.mots_du_jour));
-    setSentence("");
-    setSubmitted(false);
+    // Optional: disable reroll button or alert user
+    alert('Nope. You already have your mission for today.');
   };
 
   const handleSubmit = () => setSubmitted(true);
   const handleReset = () => {
     setSubmitted(false);
-    setSentence("");
+    setSentence('');
   };
 
   return (
