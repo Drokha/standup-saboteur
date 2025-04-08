@@ -1,12 +1,34 @@
-# React + Vite
+# 🕵️‍♂️ Standup Saboteur
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sneak chaos into your daily standup with a randomly assigned French word you must *somehow* use in your meeting. Will it be “pamplemousse”? “Toboggan”? Only fate knows.
 
-Currently, two official plugins are available:
+## 🎯 What is this?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A tiny React + TypeScript app that gives you a new "word of the day" challenge every day. Your mission: slip that word into your standup without getting weird looks. Bonus points if nobody notices.
 
-## Expanding the ESLint configuration
+## ⚙️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React + Vite + TypeScript
+- TailwindCSS for styling
+- JSON word list for max sabotage elegance
+
+## 🚀 Try it (Soon)
+
+Live demo coming soon via Vercel!
+
+## 🙃 Disclaimer
+
+This app is meant for fun. If you get fired for saying “cornichon” in front of the VP of Sales, that’s on you.
+
+```markdown
+## ✨ Features
+
+- 🔁 New word every day (soon: locked to daily via localStorage)
+- 📝 Log your sabotage attempt
+- 📤 Optional sharing (coming soon)
+
+## 📦 Setup
+
+```bash
+npm install
+npm run dev
